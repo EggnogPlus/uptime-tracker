@@ -1,5 +1,4 @@
-import init, { get_trackers, check_all_ips, add_ip, remove_ip } from "../uptime-crate/pkg/uptime_crate.js";
-
+import init, { get_trackers, check_all_ips } from '../uptime-crate/pkg/uptime_crate.js';
 interface Tracker {
     url: String;
     history: boolean[];
@@ -68,5 +67,5 @@ function calculateUptime(history: boolean[]): string {
 
 init().then(() => {
     updateDashboard();
-    setInterval(updateDashboard, 60000); // Update every minute
+    setInterval(updateDashboard, 6000); // Update every minute
 });
