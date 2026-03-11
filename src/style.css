@@ -1,0 +1,29 @@
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  width: 250px;
+  display: inline-block;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.graph-container {
+  background: #262626;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.status { font-weight: bold; font-size: 0.8rem; }
+.text-green-500 { color: #22c55e; }
+.text-red-500 { color: #ef4444; }
+.uptime-percent { font-size: 0.75rem; color: #a3a3a3; }
